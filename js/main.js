@@ -4,7 +4,7 @@
 const nav = `
     <div class="container-fluid">
         <i class="fas fa-compact-disc fa-2x" id="logo"></i>
-        <a class="navbar-brand mr-0 ml-1" href="index.html">Disquería</a>
+        <a class="navbar-brand mr-0 ml-1" href="index.html">Colegio de Magia y Hechicería</a>
         <button
         type="button"
         class="navbar-toggler"
@@ -60,7 +60,7 @@ const footer = `
             ></a>
         </div>
         <div class="col-12 text-center">
-            <a href="https://github.com/JusRecondo" class="links" id="copyright">&copy; Jus Recondo 2020</a>
+            <a href="https://github.com/" class="links" id="copyright">&copy; Use, Reuse, Copie y pegue lo que GitHub de, je!</a>
         </div>
     </div>
 `;
@@ -89,7 +89,7 @@ switch (pathname) {
     break;
 }
 
-//la animacion del icono con forma de disco se activa tambien al pasar sobre el texto "Disquería"
+//la animacion del icono se debería activar al pasar sobre el texto
 let brand = document.querySelector(".navbar-brand");
 
 brand.addEventListener('mouseover', function() { 
@@ -103,14 +103,14 @@ brand.addEventListener('mouseout', function() {
 
 
 
-//CATALOGO
+//ALDUS!
 
-//Los datos para la pagina los traigo desde un archivo JSON externo, alojado en mi github
-fetch('https://gist.githubusercontent.com/JusRecondo/56c7bf719b66e1455c28ff4888573331/raw/ab43b7e2d77dbe36ff2c59d404a23417e6eb5097/album_data.json')
+//Probando hacer fetch de un json!
+fetch('https://gist.githubusercontent.com/mauro2k/56c7bf719b66e1455c28ff4888573331/raw/')
 .then(response => response.json())
 .then(data => { 
     console.log(data);
-    let catalogo = document.querySelector("#catalogo");
+    let catalogo = document.querySelector("#Aldus");
     for(let i=0; i < data.length; i++) {
         if(data[i]["stock"]) {
             var stock = "Si";
@@ -120,13 +120,13 @@ fetch('https://gist.githubusercontent.com/JusRecondo/56c7bf719b66e1455c28ff48885
         catalogo.innerHTML += `
         <div class="col-md-3">
             <div class="card shadow my-3" style="min-height: 450px;">
-                <img src="${data[i]["album_cover"]}" class="card-img-top"/>
+                <img src="${data[i]["figurita_cover"]}" class="card-img-top"/>
                 <div class="card-body">
-                    <h5 class="card-title">${data[i]["album_name"]} <br> ${data[i]["artist_name"]}</h5>
+                    <h5 class="card-title">${data[i]["escuela_name"]} <br> ${data[i]["Muggle_name"]}</h5>
                     <p class="card-text">
-                        Precio: $${data[i]["price"]} | Stock: ${ stock }
+                        Precio: $${data[i]["varita"]} | Stock: ${ stock }
                     </p>  
-                    <a href="#" class="btn btn-dark my-auto">Comprar</a>
+                    <a href="#" class="btn btn-dark my-auto">Ingreso</a>
                 </div>
             </div>
         </div>`;
