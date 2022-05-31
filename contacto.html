@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <!-- Inserto HP Fonts (cdnfonts)-->
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet"        
+    />
+
+    <!-- Inserto Bootstrap v5.0.x -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+      crossorigin="anonymous"
+      
+    />
+  
+  
+    <!-- Hoja de Estilos o el famoso CSS y favicom-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/icon-favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.css" />
+   
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+    <!--Navegador-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img class="logo-header" src="./img/logo-header.png" alt="Codea codo a codo"
+        /></a>
+        <button
+          class="navbar-toggler bd-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto me-5">
+            <a class="nav-link" href="index.html"
+              >Inicio</a
+            >
+            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" href="acercade.html">Acerca de.. </a>
+            <a class="nav-link" href="casas.html"> Casas </a>
+            <a class="nav-link active" aria-current="true" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <main class="container-fluid">
+    <section id="contact">
+      <div class="row p-3">
+        <div class="col mt-3">
+          <div class="card">
+            <div class="card-header">
+              <h4>Contacto</h4>
+            </div>
+            <div class="card-body">
+              <form method="POST" action="https://formspree.io/f/xnqlkjad">
+                <div class="row align-middle">
+                  <label for="nombre" class="col-sm-3 col-form-label">Nombre y Apellido</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="nombre" name="nombre">
+                  </div>
+                </div>
+                <div class="row align-middle">
+                  <label for="email" class="col-sm-3 col-form-label">Email</label>
+                  <div class="col-sm-9">
+                    <input type="email" class="form-control" id="email" name="email">
+                  </div>
+                </div>
+                <div class="row align-middle">
+                  <label for="telefono" class="col-sm-3 col-form-label">Teléfono</label>
+                  <div class="col-sm-9">
+                    <input type="number" class="form-control" id="telefono" name="telefono">
+                  </div>
+                </div>
+                <div class="row">
+                  <label for="consulta">Consulta</label>
+                  <div class="p-2">
+                    <textarea class="form-control" style="resize: none;" rows="5" name="consulta"></textarea>
+                  </div>
+                </div>
+                  <button type="submit" class="boton boton-color1 boton-contacto float-end">Alohomora</button>
+                </form>
+              </form>
+
+              <br>
+              <br>
+              <p></p>
+              <div class="col mt-3">
+                <div class="card">
+                  <div class="card-body">
+                    <p><b>Dirección:</b> Recuerda que los muggles no pueden llegar hasta el castillo de Hogwarts. Mejor envianos un email. </p>
+                    <p><b>Teléfono:</b> Hedwig </p>
+
+                  </div>
+              
+
+
+            </div>
+          </div>
+        </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>   
+      </main>
+    <!-- Pie grande y los Henderson - Footer -->
+    <footer class="background-footer container-fluid">
+      <div class="footer contenedor row">
+        <div class="col-md-3 d-flex justify-content-center">
+          <i class="fab fa-instagram-square transition-3s"></i>
+          <i class="fab fa-facebook-square transition-3s"></i>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <a class="navbar-brand logo-footer" href="index.html"
+            ><img class="logo-header" src="./img/logo-header.png" alt=""
+          /></a>
+        </div>
+        <div class="col-md-5 text-center align-items-center" >
+          <nav class="navbar-nav navegador-footer" style="flex-wrap: wrap; justify-content:center;">
+            <a class="nav-link" href="www.google.com.ar">Design by como pude</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--y porque no metemos mano con Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        function isScrolledIntoView(elem) {
+          var docViewTop = $(window).scrollTop();
+          var docViewBottom = docViewTop + $(window).height() + 300;
+
+          var elemTop = $(elem).offset().top;
+          var elemBottom = elemTop + $(elem).height();
+
+          return elemBottom <= docViewBottom && elemTop >= docViewTop;
+        }
+        $(window).scroll(function () {
+          $(".animated").each(function () {
+            if (isScrolledIntoView(this) === true) {
+              $(this).addClass("animate__animated animate__slideInLeft");
+            }
+          });
+          $(".animate").each(function () {
+            if (isScrolledIntoView(this) === true) {
+              $(this).addClass("animate__animated animate__fadeIn");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
+
+

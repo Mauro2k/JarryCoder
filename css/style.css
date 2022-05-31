@@ -1,0 +1,385 @@
+/* Volvemos a default */
+
+@import url('http://fonts.cdnfonts.com/css/harry-potter');
+
+                
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/** Pantone Harry Potter **/
+:root {
+  --darkmagenta: #5c0000;
+  --booton-blue: #890000;
+  --plum: #c50000;
+  --active-color: #fb7e00;
+  --white: #ffffff;
+  --shadow: #890000;
+}
+/* Restartear REMS */
+html {
+  font-size: 62.5%; /* 1 REM = 10px*/
+}
+
+body {
+  font-family: 'Harry Potter', sans-serif;
+  line-height: 2;
+  height: 100vh;
+}
+
+/** Todas las globales **/
+
+h1 {
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 3.4rem;
+}
+h3,h4 {
+  font-size: 2.6rem;
+}
+p {
+  font-size: 1.7rem;
+}
+
+
+
+/** Alineado y balanceo (Líneas, márgenes y contenedores) **/
+.centrar-texto {
+  text-align: center;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.linea-media::after {
+  content: "";
+  display: block;
+  width: 50rem;
+  height: 0.3rem;
+  background-color: var(--brown);
+  margin-top: 1rem;
+  margin: auto;
+}
+.linea-corta::after {
+  content: "";
+  display: block;
+  width: 30rem;
+  height: 0.2rem;
+  background-color: var(--brown);
+  margin-top: 1.5rem;
+  margin: auto;
+}
+.linea-corta-gruesa::after {
+  content: "";
+  display: block;
+  width: 30rem;
+  height: 0.4rem;
+  background-color: var(--brown);
+  margin-top: 1.5rem;
+  margin: auto;
+}
+
+.contenedor {
+  max-width: 80%;
+  margin: auto;
+}
+.margin-section {
+  margin-top: 10rem;
+}
+.margin-section-bottom {
+  margin-bottom: 10rem;
+}
+.margin-top5 {
+  margin: 5rem auto 5rem auto;
+}
+.margen-contact {
+  margin-bottom: 4.8rem;
+}
+
+.boton {
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  display: inline-block;
+  text-align: center;
+}
+.boton-color1 {
+  background-color: var(--booton-blue);
+}
+
+/** Motor Header **/
+
+/** Nav Drink **/
+.bg-light {
+  background-color: var(--darkmagenta) !important;
+}
+.logo-header {
+  padding: 1.5rem;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 1.8rem !important;
+  color: var(--white) !important;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.nav-link:hover {
+  color: var(--plum) !important;
+}
+
+.nav-flex {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+
+/**SECCION SOBRE NOSOTROS MAIN**/
+
+.icon-nosotros {
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  flex-basis: calc(33.3% -1rem);
+  text-align: center;
+  font-weight: 700;
+}
+
+.icon i {
+  font-size: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+/**casas**/
+.imagen-casas {
+  background-image: url(../img/hogar-1.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  background-attachment: fixed;
+  align-items: center;
+}
+.contenido-casas {
+  flex: 1;
+}
+.contenido-casas h3 {
+  color: var(--white);
+}
+.contenido-casas p {
+  color: var(--white);
+  font-size: 1.8rem;
+}
+.transition-3s {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.contenido-casas a:hover {
+  color: var(--plum);
+  background-color: var(--darkmagenta);
+}
+
+.card-header h4 {
+  font-size: 18px;
+  font-family: 'Harry Potter', sans-serif;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.card {
+  border-radius: 8px !important;
+}
+
+.card-body p {
+  font-size: 15px !important;
+  font-weight: 200;
+  font-family: 'Harry Potter', sans-serif;
+}
+
+.card-body label {
+  font-size: 15px;
+  font-weight: 200;
+  font-family: 'Harry Potter', sans-serif;
+}
+
+.card-body div {
+  margin-bottom: 8px;
+}
+
+.boton-contacto {
+  font-family: 'Harry Potter', sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  width: 300px;
+  padding: 5px;
+  border: none;
+  margin-top: 0.5em;
+}
+
+.boton-contacto:hover {
+  color: var(--plum);
+  background-color: var(--darkmagenta);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+input {
+  font-size: 13px !important;
+}
+
+textarea {
+  font-size: 13px !important;
+}
+
+/*
+HERO SECTION
+*/
+.bg-harry {
+  width: 100%;
+  height: 600px;
+  background-image: -moz-linear-gradient(top, #132235, rgba(255, 252, 179, 0)),
+    url("/img/hero.jpeg") !important;
+  background-image: -o-linear-gradient(top, #132235, rgba(255, 252, 179, 0)),
+    url("/img/hero.jpeg") !important;
+  background-image: -webkit-linear-gradient(
+      top,
+      #132235,
+      rgba(255, 252, 179, 0)
+    ),
+    url("/img/hero.jpeg") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg-harry a:hover {
+  color: var(--plum);
+  background-color: var(--darkmagenta);
+}
+
+.bg-harry h1 {
+  color: var(--white);
+  text-shadow: 3px 3px 3px var(--shadow);
+  text-align: center;
+  font-size: 5em;
+}
+
+.bg-harry h4 {
+  color: white;
+  text-shadow: 2px 2px 2px var(--shadow);
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Harry Potter', sans-serif;
+}
+
+.bg-harry .boton {
+  font-family: 'Harry Potter', sans-serif;
+}
+/**SECCION LINEAS PERFILES**/
+.perfileria {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 300;
+}
+
+.perfileria p {
+  /*width: 40%;*/
+  margin-top: 2rem;
+}
+
+.perfileria img {
+  max-width: fit-content;
+}
+/**FOOTER**/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.background-footer {
+  background-color: var(--darkmagenta);
+}
+
+.fab {
+  color: var(--booton-blue);
+  font-size: 4rem;
+  margin: 2rem;
+}
+.fab:hover {
+  color: var(--plum);
+}
+.navegador-footer {
+  display: flex;
+  flex-direction: row;
+}
+.navegador-footer a {
+  margin-right: 1.5rem;
+}
+.navegador-footer a:last-of-type {
+  margin-right: 0;
+}
+.logo-footer {
+  display: block;
+  justify-content: center;
+}
+
+/** SOBRE NOSOTROS **/
+
+.acercade-content {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.acercade-content img {
+  align-items: center;
+}
+
+.parrafo-descripcion {
+  margin: 1rem auto;
+  width: 70%;
+}
+
+/** CASAS DE HOGWARTS **/
+
+.section-casas {
+  display: flex;
+  justify-content: space-between;
+}
+.section-casas img {
+  width: 45rem;
+}
+
+
+/** MEDIA QUERY **/
+
+@media (max-width: 600px) {
+  /*linea movile*/
+  .linea-media::after {
+    width: 100%;
+  }
+}
